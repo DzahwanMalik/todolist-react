@@ -14,7 +14,7 @@ const AppRoutes = [
         key: "home",
         index: true,
         requireAuth: false,
-        Component: () => HomePage,
+        Component: HomePage,
       },
     ],
   },
