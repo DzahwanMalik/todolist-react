@@ -6,7 +6,7 @@ const AppRoutes = [
     name: "main",
     path: "/",
     key: "main",
-    Component: MainLayout,
+    Component: () => <MainLayout />,
     routes: [
       {
         name: "home",
@@ -14,7 +14,7 @@ const AppRoutes = [
         key: "home",
         index: true,
         requireAuth: false,
-        Component: HomePage,
+        Component: () => <HomePage />,
       },
     ],
   },
